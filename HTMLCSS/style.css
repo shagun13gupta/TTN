@@ -1,0 +1,44 @@
+input[type=text], select, textarea{
+    width:280px;
+  }
+  #formheader{
+    background-color: #696969;
+    width: 290px;
+    
+    padding: 5px;
+       
+  }
+  #div1{
+    border: 1px solid black;
+    padding: 20px;
+  }
+
+  #div2{
+    background-color: wheat;
+    margin: auto;
+    height: 50px;
+    padding: 10px;
+  }
+  .bug-box{
+    width:300px;
+    margin:0 auto;
+    border:2px solid black;
+    padding: 5px;
+    border-radius:  10px;
+    }
+    .alignleft{
+        float:left ;
+        font-size: 20px;
+        font-weight:bold ;
+        color: #10D5D2;
+      }
+      .alignright{
+        float:right;
+      }
+      .header{
+        padding-bottom:10px; 
+      }
+      a {
+        text-decoration: none;
+        color: #10D5D2;
+      }
