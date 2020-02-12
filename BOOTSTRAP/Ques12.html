@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bug report</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .bug-report{
+  width: 400px;
+  margin:0 auto;
+ 
+  }
+
+  .space{
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+  }
+  .textarea-field {
+	  background-color: cyan;
+  }
+
+  .right-align {
+	  text-align: right;
+  }
+  .left-align {
+	  text-align: left;
+  }
+  .alignleft{
+        float:left ;
+        font-size: 30px;
+        font-weight:bold ;
+        color: #10D5D2;
+      }
+   .alignright{
+         float:right;
+      }
+
+  </style>
+  
+</head>
+<body>
+
+<div class="container">
+	<div class="header space">
+        <span class="alignleft">TO THE NEW</span>
+        <span class="alignright"><a href="#">Home</a> <a href="#">Quick Help</a></span>
+	</div>
+	
+	<br />
+	<hr />
+	<br />
+  
+    <div class="panel panel-primary bug-report">
+      <div class="panel-heading">Bug report</div>
+      <div class="panel-body">
+			<form action="#" method="post">
+				Title:*<br />
+				<input type="text" name="title" class="form-control">
+				Description:*<br />
+				<textarea name="desc" class="form-control "></textarea>
+				Operating system:<br />
+				<select name="os" class="form-control textarea-field">
+				<option value="xp">Windows XP</option>
+				<option value="7">Windows 7</option>
+				<option value="10">Windows 10</option>
+				</select>
+				Product:*<br />
+				<select name="product" class="form-control textarea-field">
+				<option value="pid">ProductID</option>
+				<option value="serialNo">Serial No</option>
+				</select>
+				Version:*<br />
+				<input type="text" name="version"><br />
+				License:*<br />
+				 <label class="radio-inline">
+					  <input type="radio" name="Free">Free
+				</label>
+				 <label class="radio-inline">
+					  <input type="radio" name="Free">Business
+				</label><br />
+				Severity:<br />
+				<select name="severity" class="form-control textarea-field">
+				<option value="critical">Critical</option>
+				<option value="normal">Normal</option>
+				</select><br />
+				Attachment:<br />
+				<input type="file" class="form-control"><br />
+				   
+				
+				</form>
+	   
+	    </div>
+	    <div class="panel-footer right-align">
+		<input type="submit" value="Send" class="btn btn-success">
+	    </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
