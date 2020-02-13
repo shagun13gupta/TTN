@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function calculate()
+            {
+                var pie=3.14;
+                var rad=document.getElementById("r");
+                var area=(pie*(rad.value)*(rad.value));
+                document.write("area of a circle is "+area);
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>QUES 2 :Calculate Area of Circle :</h1>
+        Enter the Radius of a Circle: <input type="text" id="r">
+        <button onclick="calculate()    ">Area of circle</button>
+    </body>
+</html>

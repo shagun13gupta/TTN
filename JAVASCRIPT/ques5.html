@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var i;
+            var emp=[
+                {name:"sumit",age:"22",salary:"100000",dob:"26-may-1996"},
+                {name:"ritik",age:"42",salary:"1000",dob:"20-april-1996"},
+                {name:"sneha",age:"36",salary:"8000",dob:"18-june-1996"},
+                {name:"suresh",age:"32",salary:"19000",dob:"31-october-1996"},
+                ];
+            document.write("<b>QUES 5:create a list of objects of Employee with info as follow : <br></b>");
+            document.write("<br>");
+            document.write("<br>");
+
+            document.write("<b> a)  LIST EMPLOYEES NAME, SALARY , AGE AND DOB   <br></b>");
+            document.write("<br>");
+            document.write( "list of employees are:  <br><br>");
+            for( i in emp)
+            {
+                document.write("Name :  "+emp[i].name+"<br>");
+                document.write("Age  : "+emp[i].age+"<br>");
+                document.write("salary :  "+emp[i].salary+"<br>");
+                document.write("dob :   "+emp[i].dob+"<br>");
+                document.write("<br><br>");
+            }
+            
+            document.write("<b> b):  FILTER ALL EMPLOYEES WITH SALARY GREATER THAN 5000  <br></b>");
+            document.write("<br>");
+
+            for(i in emp)
+            {
+                if(emp[i].salary>5000)
+                   document.write("employee with salary greater than 5000 are:     "+emp[i].name+"<br>");
+                   
+                   
+            }
+            document.write("<br>");
+            document.write("<br>");
+
+
+
+            document.write("<b> c): GROUP EMPLOYEES ON BASIS OF AGE  <br></b>");
+            
+            document.write("<br>");
+            document.write("<br>");
+            emp.sort(function(a, b)
+            {
+                return a.age-b.age
+            });
+            document.write("Ages of employee are sort in ascending order"+"<br>");
+              for(i in emp)
+              {
+                 document.write(emp[i].name+"  :  "+emp[i].age+"<br>");
+              }
+            document.write("<br>");
+
+
+            document.write("<b> d): Fetsch employees with salary less than 1000 and age greater than 20. Then give them an increment 5 times their salary.<br></b>");
+            document.write("<br>");
+            for(i in emp)
+            {
+                if(emp[i].salary<10000&&emp[i].age>20)
+                {                    
+                    emp[i].salary=emp[i].salary*5;
+                    document.write("New salary after increment is    " +emp[i].name+" :  "+emp[i].salary+"<br>");
+                }
+            }
+
+            document.write("<br>");
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
