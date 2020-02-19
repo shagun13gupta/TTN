@@ -1,0 +1,11 @@
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.exe
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.deps.json
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.runtimeconfig.json
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.runtimeconfig.dev.json
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.dll
+D:\INTROCSHARP\Ques4\bin\Debug\netcoreapp3.1\Ques4.pdb
+D:\INTROCSHARP\Ques4\obj\Debug\netcoreapp3.1\Ques4.csprojAssemblyReference.cache
+D:\INTROCSHARP\Ques4\obj\Debug\netcoreapp3.1\Ques4.AssemblyInfoInputs.cache
+D:\INTROCSHARP\Ques4\obj\Debug\netcoreapp3.1\Ques4.AssemblyInfo.cs
+D:\INTROCSHARP\Ques4\obj\Debug\netcoreapp3.1\Ques4.dll
+D:\INTROCSHARP\Ques4\obj\Debug\netcoreapp3.1\Ques4.pdb
