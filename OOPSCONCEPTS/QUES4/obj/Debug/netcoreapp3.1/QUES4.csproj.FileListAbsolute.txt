@@ -1,0 +1,11 @@
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.exe
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.deps.json
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.runtimeconfig.json
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.runtimeconfig.dev.json
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.dll
+D:\OOPSCONCEPTS\QUES4\bin\Debug\netcoreapp3.1\QUES4.pdb
+D:\OOPSCONCEPTS\QUES4\obj\Debug\netcoreapp3.1\QUES4.csprojAssemblyReference.cache
+D:\OOPSCONCEPTS\QUES4\obj\Debug\netcoreapp3.1\QUES4.AssemblyInfoInputs.cache
+D:\OOPSCONCEPTS\QUES4\obj\Debug\netcoreapp3.1\QUES4.AssemblyInfo.cs
+D:\OOPSCONCEPTS\QUES4\obj\Debug\netcoreapp3.1\QUES4.dll
+D:\OOPSCONCEPTS\QUES4\obj\Debug\netcoreapp3.1\QUES4.pdb

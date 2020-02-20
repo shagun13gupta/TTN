@@ -1,0 +1,11 @@
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.exe
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.deps.json
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.runtimeconfig.json
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.runtimeconfig.dev.json
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.dll
+D:\OOPSCONCEPTS\QUES3\bin\Debug\netcoreapp3.1\QUES3.pdb
+D:\OOPSCONCEPTS\QUES3\obj\Debug\netcoreapp3.1\QUES3.csprojAssemblyReference.cache
+D:\OOPSCONCEPTS\QUES3\obj\Debug\netcoreapp3.1\QUES3.AssemblyInfoInputs.cache
+D:\OOPSCONCEPTS\QUES3\obj\Debug\netcoreapp3.1\QUES3.AssemblyInfo.cs
+D:\OOPSCONCEPTS\QUES3\obj\Debug\netcoreapp3.1\QUES3.dll
+D:\OOPSCONCEPTS\QUES3\obj\Debug\netcoreapp3.1\QUES3.pdb
