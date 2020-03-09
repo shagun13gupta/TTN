@@ -1,0 +1,537 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Students copy",
+		"_postman_id": "7bf79f83-7c6d-6570-7140-8c22055c7d24",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Data",
+			"request": {
+				"url": "http://localhost:50651/api/student/GetData",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "6ec4fd60-0c59-4049-8fef-22bfceaa0541",
+					"name": "Get Data",
+					"originalRequest": {
+						"url": "http://localhost:50651/api/student/GetData",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "411",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 09:21:08 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?RDpcV0VCQVBJXFdlYkFwaVxDUlVEXGFwaVxzdHVkZW50XEdldERhdGE=?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 117,
+					"body": "{\"Table\":[{\"ROLL_NO\":2,\"NAME\":\"GAURAV\",\"MARKS\":98},{\"ROLL_NO\":3,\"NAME\":\"RAAZ\",\"MARKS\":80},{\"ROLL_NO\":4,\"NAME\":\"VAIBHAV\",\"MARKS\":95},{\"ROLL_NO\":5,\"NAME\":\"Megha Rani\",\"MARKS\":95},{\"ROLL_NO\":5,\"NAME\":\"Megha Rani\",\"MARKS\":95},{\"ROLL_NO\":6,\"NAME\":\"Swati Aggarawal\",\"MARKS\":92},{\"ROLL_NO\":9,\"NAME\":\"swati\",\"MARKS\":92},{\"ROLL_NO\":6,\"NAME\":\"Swati Aggarawal\",\"MARKS\":92},{\"ROLL_NO\":9,\"NAME\":\"Shweta Rajput\",\"MARKS\":95}]}"
+				}
+			]
+		},
+		{
+			"name": "Get Data using id",
+			"request": {
+				"url": "http://localhost:50651/api/student/GetData/5",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "cac5bffe-929f-4c6d-97fd-331e22c6015f",
+					"name": "Get Data using id",
+					"originalRequest": {
+						"url": "http://localhost:50651/api/student/GetData/5",
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "101",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 09:35:26 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?RDpcV0VCQVBJXFdlYkFwaVxDUlVEXGFwaVxzdHVkZW50XEdldERhdGFcNQ==?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 360,
+					"body": "{\"Table\":[{\"ROLL_NO\":5,\"NAME\":\"Megha Rani\",\"MARKS\":95},{\"ROLL_NO\":5,\"NAME\":\"Megha Rani\",\"MARKS\":95}]}"
+				}
+			]
+		},
+		{
+			"name": "Insert Data",
+			"request": {
+				"url": "http://localhost:50651/api/student/InsertData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"ROLL_NO\": 9,\n            \"NAME\": \"Shweta Rajput\",\n            \"MARKS\": 95\n        }"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "807b910e-7fe9-40f9-a16c-dade623b2fa3",
+					"name": "Insert Data",
+					"originalRequest": {
+						"url": "http://localhost:50651/api/student/InsertData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"ROLL_NO\": 9,\n            \"NAME\": \"Shweta Rajput\",\n            \"MARKS\": 95\n        }"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 09:36:06 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?RDpcV0VCQVBJXFdlYkFwaVxDUlVEXGFwaVxzdHVkZW50XEluc2VydERhdGE=?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 111,
+					"body": "{\"Status\":true}"
+				}
+			]
+		},
+		{
+			"name": "Update Data",
+			"request": {
+				"url": "http://localhost:50651/api/student/UpdateData/6",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"ROLL_NO\": 6,\n            \"NAME\": \"Swati Aggarawal\"\n           \n        }"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "b19bb7a8-0a2f-4420-8fc6-bde131d5dd60",
+					"name": "Update Data",
+					"originalRequest": {
+						"url": "http://localhost:50651/api/student/UpdateData/6",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"ROLL_NO\": 6,\n            \"NAME\": \"Swati Aggarawal\"\n           \n        }"
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 09:36:29 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?RDpcV0VCQVBJXFdlYkFwaVxDUlVEXGFwaVxzdHVkZW50XFVwZGF0ZURhdGFcNg==?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 118,
+					"body": "{\"Status\":true}"
+				}
+			]
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"url": "http://localhost:50651/api/student/DeleteData/9",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "cbacbe57-ac4b-430b-934d-0239d83159d3",
+					"name": "Delete Data",
+					"originalRequest": {
+						"url": "http://localhost:50651/api/student/DeleteData/9",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"description": ""
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "cache-control",
+							"key": "cache-control",
+							"value": "no-cache",
+							"description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+						},
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Mon, 09 Mar 2020 09:36:40 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "expires",
+							"key": "expires",
+							"value": "-1",
+							"description": "Gives the date/time after which the response is considered stale"
+						},
+						{
+							"name": "pragma",
+							"key": "pragma",
+							"value": "no-cache",
+							"description": "Implementation-specific headers that may have various effects anywhere along the request-response chain."
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "x-aspnet-version",
+							"key": "x-aspnet-version",
+							"value": "4.0.30319",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						},
+						{
+							"name": "x-sourcefiles",
+							"key": "x-sourcefiles",
+							"value": "=?UTF-8?B?RDpcV0VCQVBJXFdlYkFwaVxDUlVEXGFwaVxzdHVkZW50XERlbGV0ZURhdGFcOQ==?=",
+							"description": "Custom header"
+						}
+					],
+					"cookie": [],
+					"responseTime": 107,
+					"body": "{\"Status\":true}"
+				}
+			]
+		}
+	]
+}
