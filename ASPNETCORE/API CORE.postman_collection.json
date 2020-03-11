@@ -1,0 +1,382 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API CORE",
+		"_postman_id": "b93b5cdf-f4f8-1d91-ad6d-9c0dc0365059",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Data",
+			"request": {
+				"url": "https://localhost:44350/api/Student/GetData",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "afebd8a9-eb06-43b9-8d76-0de6d193a6f4",
+					"name": "Get Data",
+					"originalRequest": {
+						"url": "https://localhost:44350/api/Student/GetData",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "405",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 10 Mar 2020 15:25:32 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 6669,
+					"body": "{\"table\":[{\"rolL_NO\":2,\"name\":\"GAURAV\",\"marks\":98},{\"rolL_NO\":3,\"name\":\"RAAZ\",\"marks\":80},{\"rolL_NO\":4,\"name\":\"VAIBHAV\",\"marks\":95},{\"rolL_NO\":5,\"name\":\"Megha Rani\",\"marks\":95},{\"rolL_NO\":5,\"name\":\"Megha Rani\",\"marks\":95},{\"rolL_NO\":6,\"name\":\"Swati Aggarawal\",\"marks\":92},{\"rolL_NO\":1,\"name\":\"GAURAV\",\"marks\":98},{\"rolL_NO\":1,\"name\":\"GAURAV\",\"marks\":98},{\"rolL_NO\":6,\"name\":\"Swati Aggarawal\",\"marks\":92}]}"
+				}
+			]
+		},
+		{
+			"name": "Insert Data",
+			"request": {
+				"url": "https://localhost:44350/api/Student/InsertData",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n            \"rolL_NO\": 1,\n            \"name\": \"GAUR\",\n            \"marks\": 98\n        }"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "21b5433d-93ea-4f3d-bb04-29aa1a8b2995",
+					"name": "Insert Data",
+					"originalRequest": {
+						"url": "https://localhost:44350/api/Student/InsertData",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"rolL_NO\": 11,\n            \"name\": \"NEHA\",\n            \"marks\": 99\n        }"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 10 Mar 2020 15:26:09 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 396,
+					"body": "{\"status\":true}"
+				}
+			]
+		},
+		{
+			"name": "Update Data  ",
+			"request": {
+				"url": "https://localhost:44350/api/Student/UpdateData/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "        {\n            \"rolL_NO\": 1,\n            \"name\": \"GAURAV\"\n            \n        }"
+				},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "aced8d35-5092-4414-a31a-08c3408538c2",
+					"name": "Update Data  ",
+					"originalRequest": {
+						"url": "https://localhost:44350/api/Student/UpdateData/1",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\n            \"rolL_NO\": 1,\n            \"name\": \"GAURAV GUPTA\"\n            \n        }"
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 10 Mar 2020 15:26:37 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 148,
+					"body": "{\"status\":true}"
+				}
+			]
+		},
+		{
+			"name": "Delete Data",
+			"request": {
+				"url": "https://localhost:44350/api/Student/DeleteData/10",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "9783d0aa-fb1d-4e44-b664-4d5b29d7fa84",
+					"name": "Delete Data",
+					"originalRequest": {
+						"url": "https://localhost:44350/api/Student/DeleteData/1",
+						"method": "DELETE",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "15",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 10 Mar 2020 15:27:11 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 77,
+					"body": "{\"status\":true}"
+				}
+			]
+		},
+		{
+			"name": "Get Data By Id",
+			"request": {
+				"url": "https://localhost:44350/api/Student/GetDataId/5",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": [
+				{
+					"id": "67522597-41a6-4a56-b4cb-7b39a6f4a1ec",
+					"name": "Get Data By Id",
+					"originalRequest": {
+						"url": "https://localhost:44350/api/Student/GetDataId/5",
+						"method": "GET",
+						"header": [],
+						"body": {}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"_postman_previewtype": "text",
+					"header": [
+						{
+							"name": "content-length",
+							"key": "content-length",
+							"value": "101",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "content-type",
+							"key": "content-type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "date",
+							"key": "date",
+							"value": "Tue, 10 Mar 2020 15:27:20 GMT",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"name": "server",
+							"key": "server",
+							"value": "Microsoft-IIS/10.0",
+							"description": "A name for the server"
+						},
+						{
+							"name": "status",
+							"key": "status",
+							"value": "200",
+							"description": "Custom header"
+						},
+						{
+							"name": "x-powered-by",
+							"key": "x-powered-by",
+							"value": "ASP.NET",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookie": [],
+					"responseTime": 66,
+					"body": "{\"table\":[{\"rolL_NO\":5,\"name\":\"Megha Rani\",\"marks\":95},{\"rolL_NO\":5,\"name\":\"Megha Rani\",\"marks\":95}]}"
+				}
+			]
+		}
+	]
+}
