@@ -1,0 +1,62 @@
+﻿
+
+@using System.Web.Optimization
+
+@model MVCTest.Models.Login
+
+@{
+    Layout = null;
+}
+
+@Styles.Render("~/bundle/css_Login")
+@Scripts.Render("~/bundle/script_Login")
+
+
+   
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round" rel="stylesheet">
+    
+   
+  
+
+    <!-- Modal HTML -->
+   
+        <div class="modal-dialog modal-login">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <div class="avatar">                        
+                        <img src="~/Content/login.png" />
+                    </div>
+                    
+                    <h4 class="modal-title">Employee Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    @using (Html.BeginForm("Authorize","Home", FormMethod.Post))
+                    {
+                            <div class="form-group">
+                                <label>UserName</label>
+                                @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model=>model.UserName)
+                            </div>
+                            <div class="form-group">
+                                <label>Password </label>
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model=>model.Password)
+                            </div>
+                            <div class="field-validation-error">
+                           
+                                @Html.DisplayFor(model=>model.ErrorMessage)
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary btn-lg btn-block login-btn">Login</button>
+                            </div>
+                    }
+                    </div>
+                <div class="modal-footer">
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </div>
+        </div>
+    

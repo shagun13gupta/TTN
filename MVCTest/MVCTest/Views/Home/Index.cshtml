@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+    if(Session["Id"]==null)
+    {
+        Response.Redirect("~/Home/Login");
+    }
+}
+<div class="line">
+
+</div>
+
+
+
+<img src="@Url.Content("~/Content/emp.png")" width="1000" height="450" />
+
+
+
+
+
+@*@section scriptRender{
+    <script type="text/javascript">
+        $('.line').html(<h2>hello</h2>)
+    </script>
+}*@
+
+
+
