@@ -1,0 +1,56 @@
+﻿
+@page "/AddNav"
+
+
+@using StudentApi.Models
+@using StudentBlazor.Services
+@inject NavBarService _navbar
+
+
+
+<form>
+    <div class="row">
+        <div class="col-md-10">
+            <div class=" form-group">
+                <label for="Name" class="control-label">CategoryName</label>
+                <input form="Name" class="form-control" @bind="@objnavBarInfo.LinkName" />
+            </div>
+
+            <div class=" form-group">
+                <label for="Email" class="control-label">Reference</label>
+                <input form="Email" class="form-control" @bind="@objnavBarInfo.LinkAddress" />
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <input type="button" class="btn btn-primary" @onclick="@CreateNavBar" value="Add" />
+                <input type="button" class="btn btn-primary" @onclick="@Cancel" value="cancel" />
+
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@code {
+    NavBarInfo objnavBarInfo = new NavBarInfo();
+
+    protected void CreateNavBar()
+    {
+        _navbar.AddNavBar(objnavBarInfo);
+        _navigate.NavigateTo("/Index");
+    }
+    void Cancel()
+    {
+        _navigate.NavigateTo("/Index");
+    }
+
+
+}

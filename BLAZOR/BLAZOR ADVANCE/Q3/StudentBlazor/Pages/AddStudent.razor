@@ -1,0 +1,67 @@
+﻿
+
+@page "/addstudent"
+
+@using StudentApi.Models
+@using StudentApi.Repository
+@inject IStudent _student
+
+<h1>Create</h1>
+<h3>Student</h3>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <div class="form-group">
+                <label for="Id" class="control-label">Id</label>
+                <input for="Id" class="form-control" @bind="@stu.Id" />
+            </div>
+            <div class="form-group">
+                <label for="FirstName" class="control-label">FirstName</label>
+                <input for="FirstName" class="form-control" @bind="@stu.FirstName" />
+            </div>
+            <div class="form-group">
+                <label for="LastName" class="control-label">LastName</label>
+                <input for="LastName" class="form-control" @bind="@stu.LastName" />
+            </div>
+            <div class="form-group">
+                <label for="Age" class="control-label">Age</label>
+                <input for="Age" class="form-control" @bind="@stu.Age" />
+            </div>
+            <div class="form-group">
+                <label asp-for="Gender" class="control-label">Gender</label>
+                <select asp-for="Gender" class="form-control" @bind="@stu.Gender">
+                    <option value="">-- Select Gender --</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Course" class="control-label">Course</label>
+                <input asp-for="Course" class="form-control" @bind="@stu.Course" />
+            </div>
+            <div class="form-group">
+                <label asp-for="City" class="control-label">Address</label>
+                <input asp-for="City" class="form-control" @bind="@stu.Address" />
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-default" @onclick="@CreateStudent">Save</button>
+                <button class="btn" @onclick="@cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@functions {
+    Students stu = new Students();
+    protected void CreateStudent()
+    {
+        _student.AddStudent(stu);
+        _navigate.NavigateTo("liststudent");
+    }
+    protected void cancel()
+    {
+        _navigate.NavigateTo("Index");
+    }
+}
+

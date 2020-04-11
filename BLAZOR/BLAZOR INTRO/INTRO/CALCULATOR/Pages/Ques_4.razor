@@ -1,0 +1,39 @@
+﻿@page "/ques4"
+@inject NavigationManager _navigate
+<h3> Ques 4:  Explain all binding with example.?</h3>
+
+<h4>Three Types of Binding:  </h4>
+
+
+
+<h5>One-way Data Binding</h5>
+
+<p>
+    @str
+</p>
+
+@functions {
+    string str = "One-way Data Binding";
+}
+
+
+
+<h5>Two way binding</h5>
+
+ Enter your name:
+<input type="text" bind=@name />
+@functions
+{
+    public string name { get; set; }
+    public void Click()
+    {
+        _navigate.NavigateTo("ques1");
+        
+    }
+}
+
+
+<h5>Event binding</h5>
+<input type="button" value="click" @onclick="Click" />
+
+

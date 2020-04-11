@@ -1,0 +1,81 @@
+﻿
+
+@using StudentApi.Models
+
+
+@page "/"
+@page "/login"
+
+@layout LoginLayout
+
+    <div class="row">
+        <div class="col-md-4">
+            <center> <h3>  Login Form </h3> </center>
+            <form>
+                <div class="container">
+                    <div class="form-group">
+                        <label for="Id" class="control-label">UserName</label>
+                        <input for="Id" placeholder="UserName" class="form-control" @bind="@logins.UserName" />
+                    </div>
+                    <div class="form-group">
+                        <label for="FirstName" class="control-label">Password</label>
+                        <input for="FirstName" placeholder="Password" class="form-control" @bind="@logins.Password" />
+                    </div>
+                    <div class="form-group">
+                        <input type="button" value="submit" @onclick="@submitdata" />
+                        @*<button type="submit" value="submit" @onclick="@submitdata">Login</button>*@
+                    </div>
+                </div>
+            </form>
+        </div>
+        </div>
+
+                @*<div class="row login-div">
+                    
+                    <div class="col-12 d-flex align-items-center justify-content-center">
+                        <input type="text" placeholder="Username" @bind="@logins.UserName" @bind:event="oninput" />
+                        <input type="text" placeholder="password" @bind="@logins.Password"/>
+                        <input type="button" value="Submit" @onclick="submitdata" />
+                    </div>
+                </div>*@
+
+                @functions {
+
+                    BlazorDbContext context = new BlazorDbContext();
+
+                    Logins logins = new Logins();
+
+
+
+                    protected override async Task OnInitializedAsync()
+                    {
+
+
+                    }
+
+
+                    protected override async Task OnAfterRenderAsync(bool firstRender)
+                    {
+
+                    }
+
+                    protected void submitdata()
+                    {
+                        var details = context.Logins.Where(x => x.UserName == logins.UserName && x.Password == logins.Password).FirstOrDefault();
+
+                        //  bool s= loginGateway.DoLogin(logins);
+                        if (details != null)
+                        {
+                            _navigate.NavigateTo("Index");
+                        }
+                        else
+                        {
+                            _navigate.NavigateTo("/Unauthorized");
+                        }
+
+
+
+                    }
+
+
+                }

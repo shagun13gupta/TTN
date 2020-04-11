@@ -1,0 +1,75 @@
+﻿@using StudentApi.Models
+
+@page "/liststudent"
+@inject IStudent _student
+
+
+<h1>Student Data</h1>
+
+<p>
+    <a href="/addstudent">Create New</a>
+</p>
+@if (stuList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class='table'>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>FirstName</th>
+                <th>SecondName</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Course</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var stu in stuList)
+            {
+            <tr>
+                <td>@stu.Id</td>
+                <td>@stu.FirstName</td>
+                <td>@stu.LastName</td>
+                <td>@stu.Age</td>
+                <td>@stu.Gender</td>
+                <td>@stu.Course</td>
+                <td>@stu.Address</td>
+                <td>
+                    <input type="button" value="edit" @onclick="@(()=>Edit(@stu.Id))" />
+                    <input type="button" value="delete" @onclick="@(()=>Delete(@stu.Id))" />
+                    @*<a href="/EditStudent/@stu.Id">Edit</a>*@
+                    @*<a href="/DeleteStudent/@stu.Id">Delete</a>*@
+                </td>
+            </tr>
+
+            }
+        </tbody>
+    </table>
+}
+
+@functions {
+    Students students = null;
+    IEnumerable<Students> stuList;
+
+    protected override async Task OnInitializedAsync()
+    {
+        students = new Students();
+        stuList = _student.GetStudents();
+
+
+    }
+
+    protected void Edit(int id)
+    {
+        _navigate.NavigateTo("EditStudent/" + id);
+    }
+
+    protected void Delete(int id)
+    {
+        _navigate.NavigateTo("DeleteStudent/" + id);
+    }
+}   

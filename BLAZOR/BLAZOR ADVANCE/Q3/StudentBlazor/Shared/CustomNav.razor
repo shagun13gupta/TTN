@@ -1,0 +1,46 @@
+﻿@using StudentApi.Models
+@using StudentBlazor.Services
+@inject NavBarService _navbar
+
+
+
+<div class="sidebar">
+    <NavLink class="nav-link" href="AddNav">
+        <span class="oi oi-plus" aria-hidden="true"></span>
+        add new NavMenu
+
+
+    </NavLink>
+    @if (objnavBarInfo == null)
+    {
+        <p><em>Loading...</em></p>
+    }
+    else
+    {
+
+        @foreach (var category in objnavBarInfo)
+        {
+
+            <ul class="nav flex-column">
+                <li class="nav-item px-3">
+                    <a class="nav-link" href="@category.LinkAddress">
+                        <span class="oi oi-book" aria-hidden="true"></span>@category.LinkName
+                    </a>
+                </li>
+            </ul>
+        }
+
+
+    }
+
+</div>
+
+@code
+{
+    List<NavBarInfo> objnavBarInfo;
+    protected override async Task OnInitializedAsync()
+    {
+
+        objnavBarInfo = await Task.Run(() => _navbar.GetNav());
+    }
+}

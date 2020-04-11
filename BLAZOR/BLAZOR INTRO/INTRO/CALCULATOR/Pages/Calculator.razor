@@ -1,0 +1,62 @@
+﻿@page "/calculator"
+
+<h1> Calculator </h1>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="container">
+            <div class="form-group">
+                <label for="First Number" class="control-label">First Number</label>
+                <input for="First Number" placeholder="Enter First Number" class="form-control" @bind="@num1" />
+            </div>
+            <div class="form-group">
+                <label for="Second Number" class="control-label">Second Number</label>
+                <input for="Second Number" placeholder="Enter Second Number" class="form-control" @bind="@num2" />
+            </div>
+            <div class="form-group">
+                <label for="Result" class="control-label">Result</label>
+                <input for="Result" class="form-control" @bind="@finalresult" />
+            </div>
+
+            <div>
+                <button @onclick="@AddNumbers">Add</button>
+                <button @onclick="@SubtractNumbers">Subtract</button>
+                <button @onclick="@MultiplyNumbers">Multiply</button>
+                <button @onclick="@DivideNumbers">Divide</button>
+            </div>
+        </div>
+            
+        
+    </div>
+</div>
+
+
+@functions{
+    string num1;
+    string num2;
+    string finalresult;
+    void AddNumbers()
+    {
+        finalresult = (Convert.ToDouble(num1) + Convert.ToDouble(num2)).ToString();
+    }
+    void SubtractNumbers()
+    {
+        finalresult = (Convert.ToDouble(num1) - Convert.ToDouble(num2)).ToString();
+    }
+    void MultiplyNumbers()
+    {
+        finalresult = (Convert.ToDouble(num1) * Convert.ToDouble(num2)).ToString();
+    }
+    void DivideNumbers()
+    {
+        if (Convert.ToDouble(num2) != 0)
+        {
+            finalresult = (Convert.ToDouble(num1) / Convert.ToDouble(num2)).ToString();
+        }
+        else
+        {
+            finalresult = "Cannot Divide by Zero";
+        }
+    }
+}
