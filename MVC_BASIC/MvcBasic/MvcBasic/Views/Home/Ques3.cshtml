@@ -1,0 +1,41 @@
+﻿
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques3</title>
+</head>
+<body>
+    <div> 
+        <h2>Ques 3: Explain Render Section and CShtml function with examples.Why do we use the “Bind'' attribute in the action parameter? </h2>
+    
+        <h3 style="text-decoration-style:solid">Bind Atttribute</h3>
+        <p>Bind Attribute specifies the property that we want to include in the model binding.</p>
+        <p>Like in our Employee Registration Form I have not included "City" Parameter. Hence It will be
+           excluded from the model binding.</p>
+        
+        <h3 style="text-decoration-style:solid">Render Section</h3>
+        <p>RenderSection() is a method of the WebPageBase class. Scott wrote at one point, The first parameter to the
+          "RenderSection()" helper method specifies the name of the section we want to render at that location in the
+          layout template. The second parameter is optional and allows us to define whether the section we are 
+          rendering is required or not. If a section is "required", then Razor will throw an error at runtime if that 
+          section is not implemented within a view template that is based on the layout file (that can make it easier 
+          to track down content errors). It returns the HTML content to render.
+        </p>
+    
+        <h3 style="text-decoration-style:solid"> Cshtml Functions</h3>
+        <p></p>
+        @functions
+        {
+            public string Message()
+            {
+                return "Hello this a razor function";
+            }
+        }
+        <p><b>Message is:</b>@Message()</p>
+    </div>
+</body>
+</html>

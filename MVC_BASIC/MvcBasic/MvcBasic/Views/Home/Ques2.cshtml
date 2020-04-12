@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+   
+}
+
+<div class="row">
+    <h2>Ques 1:Explain RenderPartial, Partial and Render Action with example</h2>
+    <h2>Ques 2:Explain NoAction, ChildActionOnly with example.</h2>
+    <hr />
+    <div class="col-lg-6">
+        @Html.Action("EmployeeLogin")
+    </div>
+    <div class="col-lg-6">
+        @{Html.RenderAction("EmployeeRegistration");}
+    </div>
+
+</div>
