@@ -1,0 +1,37 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques1</title>
+</head>
+<body>
+    <div>
+        <h1>Ques 1:Explain MVC and the benefit of MVC.</h1>
+
+        MVC is a model,view,controller
+        <p>Model works directly with the database.We simply use model to fetch,insert,update ,delete data from the database</p>
+        <p>View is the user interface in which user can perform some actions. View consist of html,css,javascript.</p>
+        <p>
+            Controller is the part in which we process the data after we get a request from View and before
+            updating anything in our database with our Model.
+        </p>
+        <br />
+        <h3>Advantages of MVC architecture:</h3>
+
+        <p>Development of the application becomes fast.</p>
+        <p>Easy for multiple developers to collaborate and work together.</p>
+        <p>Easier to Update the application.</p>
+        <p>Easier to Debug as we have multiple levels properly written in the application.</p>
+        @Html.ActionLink("Question 3", "Index");
+        @Html.ActionLink("Question 2", "Ques2");
+        @Html.ActionLink("Question 4", "Ques4");
+        @Html.ActionLink("Question 5", "Ques5");
+    </div>
+</body>
+</html>

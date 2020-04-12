@@ -1,0 +1,63 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques2</title>
+</head>
+<body>
+    <div>
+        <h1>Ques 2: Explain MVC Life Cycle </h1>
+
+        <p>1 Fill route: - MVC requests are mapped to route tables which in turn specify which controller and action to be invoked. 
+             So if the request is the first request the first thing is to fill the route table with routes collection.
+             This filling of route table happens in the global.asax file.</p>
+
+
+
+        <p>2 Fetch route:- Depending on the URL sent "UrlRoutingModule" searches the route table to create "RouteData" object
+           which has the details of which controller and action to invoke.</p>
+
+
+
+        <p>3 Request context created: - The "RouteData" object is used to create the "RequestContext" object.</p>
+
+
+
+        <p>
+            4 Controller instance created: - This request object is sent to "MvcHandler" instance to create the
+            controller class instance. Once the controller class object is created it calls the "Execute" method 
+            of the controller class.
+
+        </p>
+
+        <p>
+            5 Creating Response object: - This phase has two steps executing the action and finally sending the 
+            response as a result to the view.
+        </p> 
+
+
+        <p>
+            6 Execute Action: - The "ControllerActionInvoker" determines which action to executed and executes 
+            the action.
+        </p>
+
+
+        <p>
+            7 Result sent: - The action method executes and creates the type of result which can be a view result ,
+            file result , JSON result etc.
+        </p>
+
+
+        @Html.ActionLink("Question 1", "Ques1");
+        @Html.ActionLink("Question 3", "Index");
+        @Html.ActionLink("Question 4", "Ques4");
+        @Html.ActionLink("Question 5", "Ques5");
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿
+@model MvcIntro.Models.Student
+
+@{
+    Layout = null;
+    
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1>Ques 3: How to pass data from Controller to view and view to the controller with Example. How to call and pass data from one controller to another controller</h1>
+        <hr />
+        <h2>@ViewBag.Message</h2>
+        <hr />
+        <h2>List of students passed using ViewBag</h2>
+        <ul>
+            @foreach (var item in ViewBag.Students)
+            {
+                <li>@item</li>
+
+            }
+        </ul>
+        <hr />
+        <h2>Data Passed from view to controller Example is below fill the form. </h2>
+        <section>
+            <h3>1) Using Parameters:</h3>
+            @using (Html.BeginForm("PostParameter", "Home"))
+            {
+                <label>FirstName</label>
+                <input type="text" name="firstname" />
+                <br />
+                <br />
+                <label>SecondName</label>
+                <input type="text" name="LastName" /><br />
+                <br />
+                <input type="submit" value="Click Me" />
+            }
+        </section>
+        <section>
+            <h3>1) Using Request:</h3>
+            @using (Html.BeginForm("PostRequest", "Home"))
+            {
+                <label>FirstName</label>
+                <input type="text" name="firstname" />
+                <br />
+                <br />
+                <label>SecondName</label>
+                <input type="text" name="LastName" /><br />
+                <br />
+                <input type="submit" value="Click Me" />
+            }
+        </section>
+        <section>
+            <h3>1) Using FormCollection:</h3>
+            @using (Html.BeginForm("PostFormCollection", "Home"))
+            {
+                <label>FirstName</label>
+                <input type="text" name="firstname" />
+                <br />
+                <br />
+                <label>SecondName</label>
+                <input type="text" name="LastName" /><br />
+                <br />
+                <input type="submit" value="Click Me" />
+            }
+        </section>
+        <section>
+            <h3>1) Using Binding:</h3>
+            @using (Html.BeginForm("PostUsingBinding", "Home", FormMethod.Post))
+            {
+                @Html.LabelFor(s => s.Id)<br />
+                @Html.TextBoxFor(s => s.Id);<br />
+                <br />
+                @Html.LabelFor(s => s.Name)<br />
+                @Html.TextBoxFor(s => s.Name);<br />
+                <br />
+                @Html.LabelFor(s => s.Age)<br />
+                @Html.TextBoxFor(s => s.Age);<br />
+                <br />
+                <input type="submit" value="Click Me" />
+            }
+        </section>
+        <hr />
+        <h2>Data pass between controller to controller click link below:</h2>
+
+        @Html.ActionLink("Pass data between controller", "Index", "Temp");
+        <br />
+        <br />
+        <br />
+
+        <h4>Link to other Question:</h4>
+        @Html.ActionLink("Question 1", "Ques1");
+        @Html.ActionLink("Question 2", "Ques2");
+        @Html.ActionLink("Question 4", "Ques4");
+        @Html.ActionLink("Question 5", "Ques5");
+
+
+
+    </div>
+</body>
+</html>

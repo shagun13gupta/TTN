@@ -1,0 +1,42 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques5</title>
+</head>
+<body>
+    <div>
+
+        <h1>Use of Global. Asax and difference b/w global Web config and View Web Config.?</h1>
+        <br />
+
+        <h3>Global.asax</h3>
+        <p>The Global.asax file in an MVC application allows us to write code which we want to run at the application level, 
+           such as Application_BeginRequest, Application_error, Application_Start, session_start, session_end, etc.</p>
+        <br />
+
+        <h3>Global web.config</h3>
+        <p>The Web.config file of an MVC application is one of the most useful and important files which contains the 
+           application level configurations.</p>
+
+        <br />
+        <h3>View web.config</h3>
+        <p>The web.config file exists in the Views folders to prevent access to your views by any means other than your controller.</p>
+        
+        <br />
+        <br />
+
+        
+        @Html.ActionLink("Question 1", "Ques1");
+        @Html.ActionLink("Question 2", "Ques2");
+        @Html.ActionLink("Question 3", "Index");
+        @Html.ActionLink("Question 4", "Ques4");
+    </div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques4</title>
+</head>
+<body>
+    <div>
+        <h1> Ques 4: Why we use App_Start, App_Data and Shared Folder. ?</h1>
+
+        <h3>App_Start</h3>
+        <p>
+            When an MVC application first starts, the Application_Start() method is called.
+            This method, in turn, calls the RegisterRoutes() method. The RegisterRoutes() method creates the route table.
+            The classes like BundleConfig, FilterConfig, IdentityConfig, RouteConfig etc. are stored within this folder.
+        </p>
+        <br />
+        <h3>App_Data</h3>
+        <p>The App_Data folder of MVC application is used to contain the application related data files like
+          . mdf files, LocalDB, and XML files, etc</p>
+        <br />
+        <h3>Shared folder</h3>
+        <p>Shared folder under View folder contains all the views which will be shared among different 
+           controllers e.g. layout files.</p>
+        <br />
+        <br />
+
+        @Html.ActionLink("Question 1", "Ques1");
+        @Html.ActionLink("Question 2", "Ques2");
+        @Html.ActionLink("Question 3", "Index");
+        @Html.ActionLink("Question 5", "Ques5");
+    </div>
+</body>
+</html>
