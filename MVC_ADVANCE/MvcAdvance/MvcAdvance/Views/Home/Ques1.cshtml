@@ -1,0 +1,40 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques1</title>
+</head>
+<body>
+    <div> 
+        <h1>Ques 1: Explain different types of filters and explain the ordering of filters and how to set order when we use the same type of filter we have used.</h1>
+     
+        <h4> We have 5 different types of Filters:</h4>
+        <ol style="font-size:large">
+            <li>
+                Authentication Filter - These filters run before the any another filters or actions run. Implements IAuthentication Filter
+                                   
+            </li>
+            <li>
+                Authorization Filter- Implements the IAuthorizationFilter
+            </li>
+            <li>
+                Action Filter - Implements the IActionFilter
+            </li>
+            <li>
+                Result filter-Implements the IResultFilter. Runs after the action result is executed. 
+            </li>
+            <li>
+                Exception Filter- Implements the IExceptionFilter.
+            </li>
+        </ol>
+
+        <p> We can set the order of the filter by using Orderno=1 inside the attribute accordingly....</p>
+    
+    
+    
+    </div>
+</body>
+</html>

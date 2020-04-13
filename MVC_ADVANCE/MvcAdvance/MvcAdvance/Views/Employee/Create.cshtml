@@ -1,0 +1,74 @@
+﻿
+
+
+@model MvcAdvance.Models.Employee
+@{
+    ViewBag.Title = "Insert Employee";
+
+}
+
+
+
+@using (Html.BeginForm("Create", "Employee", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form>
+                <div class="modal-header">
+                    <h4 class="modal-title">Add Employee</h4>
+                    <button type="button" onclick="location.href='@Url.Action("Details", "Employee")'" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label>Id</label>
+                        @Html.EditorFor(model => model.Id, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Id)
+                    </div>
+                    <div class="form-group">
+                        <label>Name</label>
+                        @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Name)
+
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        @Html.EditorFor(model => model.Age, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Age)
+                    </div>
+                    <div class="form-group">
+                        <label>Gender</label>
+                        @Html.EditorFor(model => model.Gender, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Gender)
+                    </div>
+                    <div class="form-group">
+                        <label>Phone</label>
+                        @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.Phone)
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        @Html.EditorFor(model => model.City, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.City)
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <h3><a href="/Employee/Details" style="color:blue"> Back to list </a></h3>
+
+                    <input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel" onclick="location.href='@Url.Action("Details", "Employee")'">
+                    <input type="submit" class="btn btn-success" value="Add">
+                    @Html.ValidationSummary(false, "",new { @class = "text-danger" })
+
+                </div>
+
+
+
+
+            </form>
+        </div>
+    </div>
+}
+
+

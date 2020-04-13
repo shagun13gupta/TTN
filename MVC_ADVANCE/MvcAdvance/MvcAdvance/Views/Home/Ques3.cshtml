@@ -1,0 +1,36 @@
+﻿
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Ques3</title>
+</head>
+<body>
+    <div> 
+        <h1> Ques 3: Difference between validation summary and ValidationMessageFor and how to check if the controller model is valid or not.Explain AntiForgery Token attribute also.</h1>
+    
+        <p style="font-size:large">validation summary and validation messagefor i have used in the employee controller inside the create view of the controller.</p>
+    
+        <ol style="font-size:large">
+            <li>
+                Validation MessageFor displays the validation message for the field if the error occurs..First Parameter is the model name
+                which is the lambda expression and second parameter is the validation message which you want to show.
+            </li>
+            <li>
+                Validation summary is used display all the error message of all the fields.It is used to display the custom error messages.
+            </li>
+        </ol>
+    
+        <h3>AntiForgery Tokens:</h3>
+        <p style="font-size:large">
+            ValidateAntiForgeryToken attribute is to prevent cross-site request forgery attacks.It is a unique value key created and stored in your browser cookies.
+        </p>
+        <p>
+            Every request must carry this value (AntiForgeryToken) under Request. Form[0]
+            Internally, the Authorization filter helps to validate this token value.
+        </p>
+    </div>
+
+</body>
+</html>
